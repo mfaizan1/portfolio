@@ -10,6 +10,7 @@ export default () => {
   return (
     <Layout>
       <h2>index page</h2>
+      <Hero />
     </Layout>
   )
 }
