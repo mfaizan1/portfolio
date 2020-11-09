@@ -505,6 +505,10 @@ Services
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+.service-title {
+  text-transform: uppercase;
+}
+
 .service p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
