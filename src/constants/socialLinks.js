@@ -35,7 +35,6 @@ const data = [
   },
 ]
 const links = data.map(link => {
-  console.log(link, "check")
   return (
     <li key={link.id}>
       <a

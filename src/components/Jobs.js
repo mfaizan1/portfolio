@@ -25,9 +25,7 @@ const Jobs = () => {
   const {
     allStrapiJobs: { nodes: jobs },
   } = useStaticQuery(query)
-  console.log(jobs, "check")
   const { company, position, date, description } = jobs[jobIndex]
-  console.log(company, position, date, description, "check2")
   return (
     <section className="section jobs">
       <Title title="experience" />
