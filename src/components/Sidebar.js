@@ -8,9 +8,9 @@ const Sidebar = ({ open, setOpen }) => {
       <button className="close-btn" onClick={() => setOpen(false)}>
         <FaTimes />
       </button>
-      <div className="side-container">
-        <Links styleClass="sidebar-links" />
-        <SocialLinks styleClass="sidebar-icons" />
+      <div className={`${open ? "side-container" : ""}`}>
+        <Links styleClass={`${open ? "sidebar-links" : ""}`} />
+        <SocialLinks styleClass={`${open ? "sidebar-icons" : ""}`} />
       </div>
     </aside>
   )
