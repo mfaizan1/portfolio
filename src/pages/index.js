@@ -6,11 +6,10 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
-export default props => {
-  console.log(props, "check")
-  const data = {}
+export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
   return (
     <Layout>
@@ -18,6 +17,7 @@ export default props => {
       <Services />
       <Jobs />
       <Projects projects={projects} title="Featured Projects" showLink />
+      <Blogs blogs={blogs} title="Latest Articles" showLink />
     </Layout>
   )
 }
@@ -41,6 +41,23 @@ export const query = graphql`
         stack {
           id
           title
+        }
+      }
+    }
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+      nodes {
+        category
+        slug
+        desc
+        date(formatString: "MMMM Do, YYYY")
+        content
+        title
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
