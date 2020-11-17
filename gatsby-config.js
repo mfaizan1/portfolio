@@ -10,6 +10,7 @@ module.exports = {
     description: "This is Faizan Portfolio Site",
     author: "@faizan",
     twitterUsername: "@mfaziulhaq",
+    image: "/twitter-img.png",
     siteUrl: "https://faizan-gatsby-portfolio.netlify.app",
   },
   plugins: [
