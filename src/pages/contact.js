@@ -26,7 +26,6 @@ const contact = () => {
                 placeholder="Message"
                 className="form-control"
                 rows="5"
-                name="message"
               ></textarea>
             </div>
             <button type="submit" className="submit-btn btn">

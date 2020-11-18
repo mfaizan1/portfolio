@@ -147,6 +147,9 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
+button:focus {
+  outline: 0;
+}
 .center-btn {
   display: block;
   width: 12rem;
@@ -678,7 +681,6 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -695,6 +697,7 @@ Projects
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
 .about-stack span {
   margin-top: 0.5rem;
@@ -982,13 +985,19 @@ Contact Page
   background: var(--clr-grey-10);
   border-radius: var(--radius);
   text-transform: uppercase;
-  letter-spacing: var(--spacing);
+  letter-spacing: 2px;
 }
 .form-control::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-grey-1);
   text-transform: uppercase;
-  letter-spacing: var(--spacing);
+  letter-spacing: 5px;
+}
+.form-control:focus {
+  outline: 0;
+}
+textarea {
+  resize: none;
 }
 .submit-btn {
   display: block;

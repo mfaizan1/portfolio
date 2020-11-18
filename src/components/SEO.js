@@ -24,7 +24,7 @@ const SEO = ({ description, title }) => {
         siteUrl,
         image,
         twitterUsername,
-        author,
+        // author,
       },
     },
   } = useStaticQuery(query)
