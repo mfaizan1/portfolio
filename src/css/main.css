@@ -558,6 +558,7 @@ Jobs
   justify-content: center;
   margin-bottom: 4rem;
 }
+
 .job-btn {
   background: transparent;
   border-color: transparent;
@@ -577,9 +578,6 @@ Jobs
 .active-btn {
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
-}
-.job-info {
-  /* min-height: 420px; */
 }
 .job-info h3 {
   font-weight: 400;
@@ -1052,4 +1050,17 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .btn-container {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .job-btn {
+    font-size: 1;
+  }
+  .job-desc {
+    column-gap: 1rem;
+  }
 }
